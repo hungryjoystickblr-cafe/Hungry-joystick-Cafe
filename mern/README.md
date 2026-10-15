@@ -22,7 +22,7 @@ This is a separate React + TypeScript/Vite frontend and Express/Node.js backend,
 
 ## GitHub and Vercel deployment
 
-The Git repository root is the parent of `Hungry-Joystick`; when connecting it to Vercel, set the project's **Root Directory** to `Hungry-Joystick/mern`. Keep the Vercel build command as `npm run build`; `vercel.json` sets the static output directory to `dist` and routes `/api/*` to the Express function. The build generates `api/index.js`, so that generated bundle is intentionally excluded from Git.
+When connecting this repository to Vercel, set the project's **Root Directory** to `mern`. Keep the Vercel build command as `npm run build`; `vercel.json` sets the static output directory to `dist` and routes `/api/*` to the Express function. The build generates `api/index.js`, so that generated bundle is intentionally excluded from Git.
 
 Set `MONGODB_URI` and `OWNER_EMAIL` in the Vercel project's environment variables. For first-time owner setup, also set a fresh `ADMIN_SETUP_TOKEN`, deploy, create the owner password at `/setup`, and then remove the setup token and redeploy. Never put these values in GitHub or in a committed `.env` file.
 
